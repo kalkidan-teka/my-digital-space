@@ -1,0 +1,63 @@
+import { title } from "process";
+
+export type LinkItem = {
+    name: string;
+    description: string;
+    href: string;
+};
+
+export type LinkGroup = {
+    title: string;
+    links: LinkItem[];    
+};
+
+export const profile = {
+    name: "kalkidan",
+    roles: "Developer & Designer",
+    tagline: "Code, creativity, faith, and everything in between.",
+    portfolio: {
+        title: "Explore my portfolio",
+        description: "Projects, development, design",
+        href: "#",
+    },
+};
+
+export const linkGroups: LinkGroup[] = [
+    {
+        title: "Professional & creative",
+        links: [
+            { name: "Github", description: "Code & experiments", href: "#"},
+            {
+                name: "LinkedIn",
+                description: "Professional journey & opportunties",
+                href: "#",
+            },
+        ],
+    },
+    {
+        title: "Around the internet",
+        links:[
+            { name: "Instagram", description: "Life & creative moments", href: "#"},
+            { name: "Tiktok", description: "Short videos, faith & ideas", href: "#"},
+            { name: "Facebook", description: "Updates & communtity", href: "#"},
+            { name: "Telegram", description: "Content & conversations", href:"#"},
+        ],
+    },
+];
+
+export const soundtrack = {
+    title: "The soundtrack",
+    heading: "Songs that keep me grounded.",
+    subheading: "Worship on repeat. Truth to return to.",
+    song: {
+        title: "Your favorite worship song",
+        artsist: "Song title, Artist",
+        href: "#",
+    },
+};
+
+export const scripture = {
+    title: "scripture",
+    qoute: "Abdie in me, and I in you.",
+    reference: "John 15:4 (ESV)",
+};

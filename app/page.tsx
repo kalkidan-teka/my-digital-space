@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { linkGroups, profile } from "@/data/content";
 
 export default function Home() {
   return (
@@ -18,12 +18,8 @@ export default function Home() {
             Finding my way.
           </span>
         </h1>
-        <p className="mb-1.5 mt-5 font-semibold">
-           Developer & Designer
-        </p>
-        <p className="mb-7 max-w-[34ch] text-steel">
-          Code, creativity, faith, and everything in between.
-        </p>
+        <p className="mb-1.5 mt-5 font-semibold">{profile.roles}</p>
+        <p className="mb-7 max-w-[34ch] text-steel">{profile.tagline}</p>
         <a href="#" 
            className="flex items-cenetr justify-between gap-5 rounded-2xl border-gold bg-card px-5 py-5"
         >
@@ -39,7 +35,21 @@ export default function Home() {
       </section>
 
       <main>
-        <p className="text-muted">Links go here.</p>
+        {linkGroups.map((group) => (
+          <section key={group.title} className="mb-10">
+            <h2 className="mb-2 font-display italic text-olive">{group.title}</h2>
+            {group.links.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="block border-b border-line py-4"
+                >
+                  <b className="block text-lg font-semibold">{link.name}</b>
+                  <span className="text-sm text-muted">{link.description}</span>
+                </a>
+            ))}
+        </section>
+        ))}      
       </main>
       </div>
     </div>
