@@ -1,4 +1,7 @@
-import { linkGroups, profile } from "@/data/content";
+import LinkSection from "@/components/LinkSection";
+import SongSection from "@/components/SongSection";
+import Verse from "@/components/Verse";
+import { linkGroups, profile, scripture, soundtrack } from "@/data/content";
 
 export default function Home() {
   return (
@@ -36,20 +39,10 @@ export default function Home() {
 
       <main>
         {linkGroups.map((group) => (
-          <section key={group.title} className="mb-10">
-            <h2 className="mb-2 font-display italic text-olive">{group.title}</h2>
-            {group.links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="block border-b border-line py-4"
-                >
-                  <b className="block text-lg font-semibold">{link.name}</b>
-                  <span className="text-sm text-muted">{link.description}</span>
-                </a>
-            ))}
-        </section>
-        ))}      
+          <LinkSection key={group.title} {...group} />
+        ))}
+        <SongSection {...soundtrack} />
+        <Verse {...scripture}/>  
       </main>
       </div>
     </div>
