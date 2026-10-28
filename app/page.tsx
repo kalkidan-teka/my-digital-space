@@ -23,21 +23,26 @@ export default function Home() {
         </h1>
         <p className="mb-1.5 mt-5 font-semibold">{profile.roles}</p>
         <p className="mb-7 max-w-[34ch] text-steel">{profile.tagline}</p>
-        <a href="#" 
-           className="flex items-cenetr justify-between gap-5 rounded-2xl border-gold bg-card px-5 py-5"
+        <a 
+          href={profile.portfolio.href}
+          className="flex items-cenetr justify-between gap-5 rounded-2xl border border-gold bg-card px-5 py-5 transition hover:-translate-y-0.5 motion-reduce:transition-none"
         >
           <span>
             <b className="block font-display text-xl font-bold">
-              Explore my portfolio
+              {profile.portfolio.title}            
             </b>
             <small className="text-muted">
-              Projects, Development, Design
+              {profile.portfolio.description}
             </small>
           </span>
+          <i
+            aria-hidden="true"
+            className="size-11 flex-none rounded-[0_100%_0_100%] bg-gold"
+          />
         </a>
       </section>
 
-      <main>
+      <main className="relative pl-8.5 before:absolute before:bottom-1.5 before:left-1.75 before:top-1.5 before:w-0.5 before:rounded-full before:bg-line">
         {linkGroups.map((group) => (
           <LinkSection key={group.title} {...group} />
         ))}
