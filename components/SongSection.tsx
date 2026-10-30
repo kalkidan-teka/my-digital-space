@@ -14,7 +14,7 @@ export default function SongSection({
                 {heading}
             </p>
             <p className="mb-3.5 mt-1.5 text-steel">{subheading}</p>
-            <a href={song.href}
+            {/* <a href={song.href}
                className="flex items-center gap-4 rounded-2xl bg-card p-3.5"
             >
                 <span
@@ -27,7 +27,16 @@ export default function SongSection({
                     <b className="block font-semibold">{song.title}</b>
                     <span className="text-sm text-muted">{song.artsist}</span>
                 </span>
-            </a>
+            </a> */}
+
+            <iframe 
+              src={song.embedUrl} 
+              title={`${song.title} by ${song.artist}`}
+              height="152"
+              loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              className="w-full rounded-2xl border-0"
+            />
         </section>
     );
 }

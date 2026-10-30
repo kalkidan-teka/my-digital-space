@@ -50,9 +50,11 @@ export const soundtrack = {
     heading: "Songs that keep me grounded.",
     subheading: "Worship on repeat. Truth to return to.",
     song: {
-        title: "Your favorite worship song",
-        artsist: "Song title, Artist",
-        href: "#",
+        // title: "Your song title here",
+        // artist: "Artist name",
+        href: "https://open.spotify.com/track/7n1HpNrQc9qY1ZRTghczNv",
+        embedUrl:
+            "https://open.spotify.com/embed/track/7n1HpNrQc9qY1ZRTghczNv?utm_source=generator&theme=0",
     },
 };
 
