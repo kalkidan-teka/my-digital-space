@@ -17,3 +17,12 @@
 body {
   @apply bg-paper text-ink font-body antialiased;
 }
+
+@layer base {
+  a:focus-visible {
+    @apply rounded-md outline-3 outline-offset-3 outline-gold;
+  }
+  ::selection {
+  @apply bg-gold text-paper
+  }
+}
