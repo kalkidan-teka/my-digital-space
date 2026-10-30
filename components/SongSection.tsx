@@ -3,16 +3,15 @@ import SectionTitle from "./SectionTitle";
 
 export default function SongSection({
     title,
-    heading,
     subheading,
     song,
 }: typeof soundtrack) {
     return (
         <section className="mb-10">
             <SectionTitle>{title}</SectionTitle>
-            <p className="font-display text-2xl font-bold leading-tight tracking-tight">
+            {/* <p className="font-display text-2xl font-bold leading-tight tracking-tight">
                 {heading}
-            </p>
+            </p> */}
             <p className="mb-3.5 mt-1.5 text-steel">{subheading}</p>
             {/* <a href={song.href}
                className="flex items-center gap-4 rounded-2xl bg-card p-3.5"
@@ -31,7 +30,7 @@ export default function SongSection({
 
             <iframe 
               src={song.embedUrl} 
-              title={`${song.title} by ${song.artist}`}
+            //   title={`${song.title} by ${song.artist}`}
               height="152"
               loading="lazy"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
