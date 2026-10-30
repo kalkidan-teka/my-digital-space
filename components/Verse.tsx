@@ -7,7 +7,7 @@ import SectionTitle from "./SectionTitle";
         <section>
             <SectionTitle>{title}</SectionTitle>
             <figure className="border-t border-gold pt-8">
-                <blockquote className="font-display text-[clamp(1.875rem,6vm,2.5rem)] italic leading-[1.15] tracking-tight">
+                <blockquote className="font-display text-[clamp(1.875rem,6vw,2.5rem)] italic leading-[1.15] tracking-tight">
                     "{qoute}"
                 </blockquote>
                 <figcaption className="mt-3.5 text-sm text-steel">{reference}</figcaption>

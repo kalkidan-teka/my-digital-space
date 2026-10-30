@@ -26,10 +26,10 @@ export const linkGroups: LinkGroup[] = [
     {
         title: "Professional & creative",
         links: [
-            { name: "Github", description: "Code & experiments", href: "#"},
+            { name: "GitHub", description: "Code & experiments", href: "#"},
             {
                 name: "LinkedIn",
-                description: "Professional journey & opportunties",
+                description: "Professional journey & opportunities",
                 href: "#",
             },
         ],
@@ -38,8 +38,8 @@ export const linkGroups: LinkGroup[] = [
         title: "Around the internet",
         links:[
             { name: "Instagram", description: "Life & creative moments", href: "#"},
-            { name: "Tiktok", description: "Short videos, faith & ideas", href: "#"},
-            { name: "Facebook", description: "Updates & communtity", href: "#"},
+            { name: "TikTok", description: "Short videos, faith & ideas", href: "#"},
+            { name: "Facebook", description: "Updates & community", href: "#"},
             { name: "Telegram", description: "Content & conversations", href:"#"},
         ],
     },
@@ -57,7 +57,7 @@ export const soundtrack = {
 };
 
 export const scripture = {
-    title: "scripture",
-    qoute: "Abdie in me, and I in you.",
+    title: "Scripture",
+    qoute: "Abide in me, and I in you.",
     reference: "John 15:4 (ESV)",
 };

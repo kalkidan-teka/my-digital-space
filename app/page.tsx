@@ -8,14 +8,14 @@ export default function Home() {
     <div className="mx-auto max-w-270 px-6 pb-16 pt-6 md:px-10 md:pt-9 lg:pb-24">
       <header className="mb-11 flex items-baseline justify-between lg:mb-18">
         <span className="font-display text-2xl font-bold tracking-tight">
-          Kalkidan Teka
+          Kal_kidan
         </span>
         <small className="text-sm text-muted">Personal web space</small>
       </header>
 
       <div className="grid gap-11 lg:grid-cols-[5fr_6fr] lg:items-start lg:gap-20">
         <section className="lg:sticky lg:top-8">
-        <h1 className="font-display text-[clamp(2.75rem,11vm,4.75rem)] font-bold leading-[0.98] tracking-tight">
+        <h1 className="font-display text-[clamp(2.75rem,11vw,4.75rem)] font-bold leading-[0.98] tracking-tight">
           Building things.
           <span className="block font-normal italic text-olive">
             Finding my way.
