@@ -15,11 +15,11 @@ export const profile = {
     name: "kalkidan",
     headline: "Hey, I'm Kal.",
     roles: "Developer + Designer",
-    tagline: "Code, design , faith, and whatever else i'm into.",
+    tagline: "Code, design, faith, and whatever else I'm into.",
     portfolio: {
         title: "Explore my portfolio",
         description: "stuff I built and designed",
-        href: "#",
+        href: "https://kalkidanteka.pro.et",
     },
 };
 
@@ -38,8 +38,8 @@ export const linkGroups: LinkGroup[] = [
     {
         title: "Find me online",
         links:[
-            { name: "Instagram", description: "life and creative moments", href: "https://www.instagram.com/_kalkidanteka_?exln=d2tuZWNyZ3B3NHY1"},
-            { name: "TikTok", description: "short videos, faith and random ideas", href: "https://www.tiktok.com/@_grateful.soul_?_r=1&_d=f649jklb3j43l0&sec_uid=MS4wLjABAAAAenChJLrgn2QPEAaqqQJNsWEgAUskxuUR7S1MiSS7oiPP-oCmsfVZ2w0a9oD8GSrF&share_author_id=7342151557934449669&sharer_language=en&source=h5_m&u_code=ed0i3gbe750ll6&timestamp=1793367531&user_id=7342151557934449669&sec_user_id=MS4wLjABAAAAenChJLrgn2QPEAaqqQJNsWEgAUskxuUR7S1MiSS7oiPP-oCmsfVZ2w0a9oD8GSrF&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7696254410000058132&share_link_id=2da6d6bc-bd47-4e37-9c82-e7340e6836b9&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2CEnlargeAvatarActivity&social_share_type=5&share_enter_from=personal_homepage&item_author_type=1&enable_checksum=1"},
+            { name: "Instagram", description: "life and creative moments", href: "https://www.instagram.com/_kalkidanteka_"},
+            { name: "TikTok", description: "short videos, faith and random ideas", href: "https://www.tiktok.com/@_grateful.soul_"},
             { name: "Facebook", description: "updates and community", href: "https://www.facebook.com/share/1T5N7TbBm9/"},
             { name: "Telegram", description: "where we can actually talk", href:"https://t.me/kal_notes"},
         ],

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Kalkidan · personal web space",
   description: "Code, creativity, faith, and everything in between.",
   openGraph: {
-    title: "kallkidan · personal web space",
+    title: "kalkidan · personal web space",
     description: "Code, creativity, faith, and everything in between.",
     type: "website",
   },
