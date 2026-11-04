@@ -33,6 +33,7 @@ export const linkGroups: LinkGroup[] = [
                 description: "the professional side",
                 href: "https://www.linkedin.com/in/kalkidan-teka",
             },
+            { name: "X (Twitter)", description: "tech thoughts and updates", href: "https://x.com/_kalkidanteka_"},
         ],
     },
     {

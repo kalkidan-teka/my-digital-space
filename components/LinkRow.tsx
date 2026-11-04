@@ -1,4 +1,5 @@
 import type { LinkItem } from "@/data/content";
+import { linkProps } from "@/lib/links";
 
 export default function LinkRow({ name, description, href}: LinkItem) {
   const isExternal = href.startsWith("http");
@@ -6,7 +7,8 @@ export default function LinkRow({ name, description, href}: LinkItem) {
   return(
         <a 
           href={href} 
-          {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+          {...linkProps(href)}
+          // {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
           className="group relative block border-b border-line py-4 last:border-b-0"
           >
             <span
@@ -15,7 +17,7 @@ export default function LinkRow({ name, description, href}: LinkItem) {
             />
             <b className="block text-lg font-semibold">{name}</b>
             <span className="text-sm text-muted">{description}</span>
-          {isExternal && <span className="sr-only">(opens in a new tab)</span> }
+          {isExternal && <span className="sr-only"> (opens in a new tab)</span> }
         </a>
     );
 }

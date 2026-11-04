@@ -6,7 +6,7 @@ import SectionTitle from "./SectionTitle";
     return (
         <section>
             <SectionTitle>{title}</SectionTitle>
-                        <p className="mb-3.5 mt-1.5 text-steel">{subheading}</p>
+                        {/* <p className="mb-3.5 mt-1.5 text-steel">{subheading}</p> */}
             <figure className="border-t border-gold pt-8">
                 <blockquote className="font-display text-[clamp(1.875rem,6vw,2.5rem)] italic leading-[1.15] tracking-tight">
                     "{qoute}"

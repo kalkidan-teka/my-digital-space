@@ -2,6 +2,7 @@ import LinkSection from "@/components/LinkSection";
 import SongSection from "@/components/SongSection";
 import Verse from "@/components/Verse";
 import { linkGroups, profile, scripture, soundtrack } from "@/data/content";
+import { linkProps } from "@/lib/links";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <p className="mb-7 max-w-[34ch] text-steel">{profile.tagline}</p>
         <a 
           href={profile.portfolio.href}
+          {...linkProps(profile.portfolio.href)}
           className="flex items-cenetr justify-between gap-5 rounded-2xl border border-gold bg-card px-5 py-5 transition hover:-translate-y-0.5 motion-reduce:transition-none"
         >
           <span>
